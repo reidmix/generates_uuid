@@ -1,0 +1,23 @@
+GeneratesUUID
+=============
+
+An ActiveRecord mixin to wrap the functionality of uuidtools UUID generation for a particular attribute for a model (database column).  By default, this uuid is stored in a column named +uuid+, to override this behavior, pass a symbol with the column name.  Requires the uuidtools gem found at http://rubyforge.org/projects/uuidtools/, (in svn at /repos/shared/gems/uuidtools/tags/REL-1.0.1).
+
+Example
+=======
+
+  class User < ActiveRecord::Base
+    generates_uuid
+  end
+  
+  u = User.create!
+  u.uuid => "0ce453f2-9d25-11dc-8e13-001b63955101"
+  
+  class Resource < ActiveRecord::Base
+    generates_uuid :token
+  end
+  
+  r = Resource.create!
+  r.token => "7b151730-9cb7-11dc-bb8c-001b63955101"
+  
+Copyright (c) 2007 Los Angeles Times. All Rights Reserved.
