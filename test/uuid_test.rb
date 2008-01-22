@@ -76,6 +76,7 @@ class UUIDTest < Test::Unit::TestCase
     assert_equal 1, uuid.version
   end
 
+  private
   def assert_true(result)
     assert result
   end
