@@ -1,5 +1,7 @@
 require 'uuidtools'
 
+# UUIDTools docs at: http://uuidtools.rubyforge.org/
+
 module ActiveRecord
   module Generates
     module UUID
