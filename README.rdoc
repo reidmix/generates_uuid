@@ -1,6 +1,6 @@
 = GeneratesUUID
 
-An ActiveRecord mixin to wrap the functionality of uuidtools UUID generation for a particular attribute for a model (database column).  By default, this uuid is stored in a column named +uuid+, to override this behavior, pass a symbol with the column name.  
+An ActiveRecord mixin to wrap the functionality of uuidtools UUID generation for a model's attribute (database column).  By default, this uuid is stored in a column named +uuid+, to override this behavior, pass a symbol with the column name.  
 
 == Requirement
 
