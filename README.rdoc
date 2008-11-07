@@ -4,7 +4,7 @@ An ActiveRecord mixin to wrap the functionality of uuidtools UUID generation for
 
 == Requirement
 
-Requires the uuidtools gem found on rubyforge[http://rubyforge.org/projects/uuidtools/].
+Requires the uuidtools gem found on <a href=http://rubyforge.org/projects/uuidtools/">rubyforge</a>.
 
 == Example
 
